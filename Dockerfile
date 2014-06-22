@@ -10,6 +10,7 @@ RUN apt-get install -y wget git-core vim zsh
 
 # Install ohmyzsh
 RUN wget --no-check-certificate http://install.ohmyz.sh -O - | sh
+RUN chsh -s /bin/zsh
 
 # Form a set of standard directories
 RUN mkdir -p /downloads
